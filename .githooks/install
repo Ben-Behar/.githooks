@@ -1,4 +1,5 @@
 #!/bin/bash
 # running this file will make sure that you'll stay upto date with our changes to our git hooks.
 # if you want to revert subscribing to these hooks just run the uninstall file
-mv .git/hooks .git/hooks_old ; ln -sf ../.githooks .git/hooks
+REPOSITORY_ROOT="$(git rev-parse --show-toplevel)"
+mv $REPOSITORY_ROOT/.git/hooks $REPOSITORY_ROOT/.git/hooks_old ; ln -sf $REPOSITORY_ROOT/.githooks $REPOSITORY_ROOT/.git/hooks

@@ -1,3 +1,4 @@
 #!/bin/bash
 # running this file will restore your git hooks to the way they were before (probably with empty hooks)
-rm -r .git/hooks ; mv .git/hooks_old .git/hooks
+REPOSITORY_ROOT="$(git rev-parse --show-toplevel)"
+rm -r $REPOSITORY_ROOT/.git/hooks ; mv $REPOSITORY_ROOT/.git/hooks_old $REPOSITORY_ROOT/.git/hooks
