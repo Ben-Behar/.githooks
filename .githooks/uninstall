@@ -1,0 +1,3 @@
+#!/bin/bash
+# running this file will restore your git hooks to the way they were before (probably with empty hooks)
+rm -r .git/hooks ; mv .git/hooks_old .git/hooks

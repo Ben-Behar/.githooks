@@ -1,0 +1,4 @@
+#!/bin/bash
+# running this file will make sure that you'll stay upto date with our changes to our git hooks.
+# if you want to revert subscribing to these hooks just run the uninstall file
+mv .git/hooks .git/hooks_old ; ln -sf ../.githooks .git/hooks

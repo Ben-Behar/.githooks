@@ -1,0 +1,2 @@
+#!/bin/bash
+echo 'running the pre-commit hook from .githooks!'
